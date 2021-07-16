@@ -67,8 +67,16 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
         cell.posterImage.af_setImage(withURL: posterUrl!)
         return cell
     }
-    
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        let detailViewController = segue.destination as! MoviesDetailViewController
+        detailViewController.movie = movie    }
     /*
     // MARK: - Navigation
 
@@ -78,5 +86,5 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
