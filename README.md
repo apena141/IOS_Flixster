@@ -14,7 +14,7 @@
 
 ### App Walkthrough GIF
 
-<img src="https://github.com/apena141/IOS_Flixster/blob/main/walkthroughFinal.gif" width=250><br>
+<img src="https://github.com/apena141/IOS_Flixster/blob/main/finalDemo.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
