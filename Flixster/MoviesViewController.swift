@@ -59,9 +59,6 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         cell.posterImageView.af_setImage(withURL: posterUrl!)
-        
-        print(overview)
-        
         return cell
     }
     
